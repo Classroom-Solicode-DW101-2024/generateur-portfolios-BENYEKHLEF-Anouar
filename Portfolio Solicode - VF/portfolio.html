@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Solicode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onload="displayPortfolio()">
+
+        <section id="student-info">
+            <h1><i class="fa-solid fa-id-badge"></i> A propos de moi</h1>
+            <div id="student-details"></div>
+        </section>
+
+
+        <section id="projects">
+            <h2><i class="fa-solid fa-bars-progress"></i> Mes projets</h2>
+            <div id="project-list" class="carte"></div>
+        </section>
+
+    <div id="telechargerButton-container">
+        <button type="button" id="telechargerButton" onclick="downloadPortfolio()"><i class="fa-solid fa-file-arrow-down"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</body>
+
+
+</html>

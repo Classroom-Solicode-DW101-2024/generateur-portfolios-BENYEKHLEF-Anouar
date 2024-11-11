@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Solicode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section id="projet-formulaire">
+        <h1><i class="fa-solid fa-bars-progress"></i></i></i> Gestion des projets</h1>
+        <form id="projetForm">
+            <div>
+                <label for="intitule"><i class="fa-solid fa-file-signature"></i> Intitulé du projet :</label>
+                <input type="text" id="intitule">
+                <span id="intitule-erreur" class="erreurs-message"></span>
+            </div>
+
+            <div>
+                <label for="lien"><i class="fa-brands fa-github"></i> Lien GitHub :</label>
+                <input type="url" id="lien">
+                <span id="lien-erreur" class="erreurs-message"></span>
+            </div>
+
+            <div>
+                <label><i class="fa-solid fa-code"></i> Compétences visées :</label>
+                <input type="checkbox" id="html" name="competences" value="HTML">
+                <label for="html"><i class="fa-brands fa-html5"></i> HTML</label>
+                <input type="checkbox" id="css" name="competences" value="CSS">
+                <label for="css"><i class="fa-brands fa-css3-alt"></i> CSS</label>
+                <input type="checkbox" id="js" name="competences" value="JS">
+                <label for="js"><i class="fa-brands fa-js"></i> JS</label>
+                <span id="competences-erreur" class="erreurs-message"></span>
+            </div>
+
+            <div>
+                <label for="date"><i class="fa-solid fa-calendar-days"></i> Date de réalisation :</label>
+                <input type="date" id="date">
+                <span id="date-erreur" class="erreurs-message"></span>
+            </div>
+        </form>
+
+        <div>
+            <button type="button" id="validerButton" onclick="addProject()"><i class="fa-solid fa-check"></i>
+                Valider</button>
+        </div>
+
+        <div>
+            <button type="button" id="terminerButton" onclick="finish()"><i class="fa-solid fa-forward"></i>
+                Terminer</button>
+        </div>
+
+    </section>
+
+    <section class="carte"></section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

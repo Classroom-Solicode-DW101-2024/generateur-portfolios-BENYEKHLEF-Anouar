@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Solicode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section id="etudiant-formulaire">
+        <h1><i class="fa-solid fa-address-card"></i></i> Portfolio Solicode</h1>
+        <form>
+            <div>
+                <label for="nom"><i class="fa-solid fa-signature"></i> Nom :</label>
+                <input type="text" id="nom">
+                <span id="nom-erreur" class="erreurs-message"></span>
+            </div>
+
+            <div>
+                <label for="prenom"><i class="fa-solid fa-signature"></i> Prénom :</label>
+                <input type="text" id="prenom">
+                <span id="prenom-erreur" class="erreurs-message"></span>
+
+            </div>
+
+            <div>
+                <label for="email"><i class="fa-solid fa-at"></i> Email :</label>
+                <input type="email" id="email" placeholder="nom.prenom.solicode@gmail.com">
+                <span id="email-erreur" class="erreurs-message"></span>
+            </div>
+
+            <div>
+                <label for="telephone"><i class="fa-solid fa-phone"></i> Téléphone :</label>
+                <input type="tel" id="telephone" placeholder="+212XXX-XX-XX-XX">
+                <span id="telephone-erreur" class="erreurs-message"></span>
+            </div>
+
+            <div>
+                <label for="groupe"><i class="fa-solid fa-people-group"></i> Groupe :</label>
+                <select id="groupe">
+                    <option value="">Choisir un groupe :</option>
+                    <option class="DW" value="DW101">DW101</option>
+                    <option class="DW" value="DW102">DW102</option>
+                    <option class="DW" value="DW103">DW103</option>
+                    <option class="DW" value="DW104">DW104</option>
+                </select>
+                <span id="groupe-erreur" class="erreurs-message"></span>
+            </div>
+        </form>
+
+        <div>
+            <button type="button" id="soumettreButton" onclick="submitStudent()"><i class="fa-solid fa-forward"></i>
+                Suivant</button>
+        </div>
+
+
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>
